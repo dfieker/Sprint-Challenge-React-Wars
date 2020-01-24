@@ -18,8 +18,8 @@ useEffect(() => {
       "https://swapi.co/api/people/"
     )
     .then(response => {
-      console.log(response.data);
-      setData(response.data);
+      console.log(response.data.results);
+      setData(response.data.results);
     })
     .catch(error => {
       console.log("Data not returned", error);
