@@ -1,12 +1,32 @@
 Self-Study/Essay Questions
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
- 1. What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+ 1. What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web. 
+
+    React JS is one of the most commonly used libraries that helps developers build large scale applications effectively. It aims to solve the problem of poor performance on websites by reducing a lot of DOM operations and refreshes. One thing that was created for React JS was the virtual DOM. The virtual DOM gets updated when React detects that the state of the app has changed. When the virtual DOM is updated, React takes note of which nodes have changed due to the state changes. Once React knows which nodes have changed, it will update only those specific nodes on the actual DOM--this takes a lot of pressure off of our browsers.
+    
+    It also makes our code more organized and reusable. React JS also provides flexibility and it isn't an opionated library. 
+
+    Also, React JS lets us build encapsulated components that manage their own state and then we can compose them to make complex UIs. And since component logic is written in JavaScript instead of templates, we can easily pass rich data through our apps and keep state out of the DOM.
 
  2. What does it mean to think in react?
+    
+    A. Start With A Mock
+    B. Break The UI Into A Component Hierarchy
+    C. Build A Static Version in React
+    D. Identify The Minimal (but complete) Representation Of UI State
+    E. Identify Where Your State Should Live
+    F. Add Inverse Data Flow
+
 
  3. Describe state.
 
+    State is an object that represents the parts of the app that can change.
+
  4. Describe props.
 
+    It's a special keyword in React which stands for properties, and it's used for passing data from one component to another. Data with props is being passed in a uni-directional flow (one way from parent to child). Also, props data is read-only.
+
  5. What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are anything that affect something outside the scope of the function being executed. We sync effects in a React component to state or prop changes by passing in a dependency array as the second argument to the effect hook.
